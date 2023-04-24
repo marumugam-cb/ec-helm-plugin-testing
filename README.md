@@ -29,10 +29,10 @@ What can be controlled described in controls.
 	Canary with pause.  
 	controls :  
 		image.tag=0,1 or 0,2  
-		pause.duration=~ or duration:number in seconds, e.g. duration:30
+		pause.duration=~ or 'duration: number' in seconds, e.g. 'duration: 30' (space after : is important)
 		
 #### canary_pause_with_steps  
 	Canary with indefinite pause and weight set to 30  
 	controls :  
 		image.tag=0,1 or 0,2
-            pause.duration=~ or duration:number in seconds, e.g. duration:30
+            pause.duration=~ or 'duration: number' in seconds, e.g. 'duration: 30' (space after : is important)
