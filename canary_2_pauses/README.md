@@ -1,3 +1,5 @@
+Chart with weight 30
+
 ## Deploying the initial version
 
 To deploy the first version of your application:
@@ -5,7 +7,7 @@ To deploy the first version of your application:
 ```
 git clone https://github.com/argoproj/argo-rollouts.git
 cd argo-rollouts/examples
-helm install example ./canary_multi_pause/
+helm install example ./canary_pause_with_steps/
 ```
 
 Your application will be deployed and exposed via the `example-helm-guestbook` service
@@ -15,7 +17,7 @@ Your application will be deployed and exposed via the `example-helm-guestbook` s
 To deploy the updated version using a Blue/Green strategy:
 
 ```
-helm upgrade example ./canary_multi_pause/  --set image.tag=green
+helm upgrade example ./canary_pause_with_steps/  --set image.tag=0.2
 ```
 
 Now, two versions will exist in your cluster (and each one has an associated service)
