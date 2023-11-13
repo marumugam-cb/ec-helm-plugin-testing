@@ -28,6 +28,7 @@ spec:
           args:
           - name: service-name
             value: ec-specs-service-name
+          setWeight: 40
       
   template:
     metadata:
