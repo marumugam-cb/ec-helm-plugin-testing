@@ -21,14 +21,13 @@ spec:
     canary:
       steps:
         - setWeight: 20
-        - pause: { {{ .Values.pause.duration }} }
+        - pause: {duration: 10s}
         - analysis:
           templates:
           - templateName: success-rate
           args:
           - name: service-name
             value: ec-specs-service-name
-
       
   template:
     metadata:
